@@ -95,11 +95,11 @@ function decode() {
 	}
 	msg.value = decoded;
 }
-
-bk.onclick = () => {
+canvas.onclick = () => {
 	var i = canvas.toDataURL("image/png");
     location.assign(i);
-	
+}
+bk.onclick = () => {
 	container.style.display = 'grid';
 	canvas.style.display = 'none';
 	bk.style.display = 'none';
