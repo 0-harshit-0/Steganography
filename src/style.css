@@ -65,9 +65,7 @@ canvas {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#download{
-  user-select: none;
-}
+
 #back {
   user-select: none;
   font-size: 1.2vmax;
