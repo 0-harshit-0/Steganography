@@ -97,6 +97,9 @@ function decode() {
 }
 
 bk.onclick = () => {
+	var i = canvas.toDataURL("image/png");
+    location.assign(i);
+	
 	container.style.display = 'grid';
 	canvas.style.display = 'none';
 	bk.style.display = 'none';
