@@ -1,0 +1,79 @@
+* {
+  font-family: cursive;
+}
+
+body {
+  margin: 0%;
+}
+
+header {
+  text-align: center;
+  font-size: 1.3vmax;
+  margin: 0% 0% 7% 0%;
+}
+
+#container {
+  font-size: 1.2vmax;
+  position: fixed;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto;
+}
+#container #msg {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  color: gray;
+  padding: 1%;
+  border-radius: 7px;
+  border: solid;
+  transition: color 0.3s linear, border-color 0.3s linear;
+}
+#container #msg:hover {
+  color: black;
+  border-color: black;
+}
+#container #msg:focus {
+  color: black;
+  border-color: black;
+}
+#container #image {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: 5% 0%;
+}
+#container .button {
+  color: gray;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  width: 40%;
+  left: 30%;
+  transition: color 0.3s linear;
+}
+#container .button:hover {
+  color: black;
+}
+
+canvas {
+  border: solid;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#back {
+  font-size: 1.2vmax;
+  display: none;
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=stegno.css.map */
