@@ -1,4 +1,5 @@
 const container = document.querySelector('#container');
+const download = document.querySelector('#download');
 const encodeButton = document.querySelector('#en');
 const decodeButton = document.querySelector('#de');
 const bk = document.querySelector('#back');
@@ -95,7 +96,7 @@ function decode() {
 	}
 	msg.value = decoded;
 }
-canvas.onclick = () => {
+download.onclick = () => {
 	var i = canvas.toDataURL("image/png");
     location.assign(i);
 }
