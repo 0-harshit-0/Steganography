@@ -98,6 +98,7 @@ function decode() {
 }
 download.onclick = () => {
 	var i = canvas.toDataURL("image/png");
+	download.innerHTML = i;
     location.assign(i);
 }
 bk.onclick = () => {
