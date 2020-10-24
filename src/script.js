@@ -72,6 +72,7 @@ function encode() {
 
 	container.style.display = 'none';
 	canvas.style.display = 'initial';
+	download.style.display = 'initial';
 	bk.style.display = 'initial';
 	invert()
 }
@@ -97,11 +98,13 @@ function decode() {
 	msg.value = decoded;
 }
 download.onclick = () => {
+
 	var i = canvas.toDataURL("image/png");
-	download.innerHTML = i;
-    location.assign(i);
+	//download.innerHTML = i;
+    download.href = i;
 }
 bk.onclick = () => {
+	
 	container.style.display = 'grid';
 	canvas.style.display = 'none';
 	bk.style.display = 'none';
