@@ -67,14 +67,21 @@ canvas {
 }
 
 #back {
-  user-select: none;
   font-size: 1.2vmax;
   display: none;
   position: fixed;
   top: 80%;
-  left: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
   cursor: pointer;
 }
-
+#download {
+  font-size: 1.2vmax;
+  display: none;
+  position: fixed;
+  top: 80%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
 /*# sourceMappingURL=stegno.css.map */
