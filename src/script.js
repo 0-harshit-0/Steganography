@@ -27,10 +27,7 @@ const ctx = canvas.getContext('2d');
 
 canvas.width = innerWidth/2;
 canvas.height = innerHeight/2;
-addEventListener('resize', (e) => {
-	canvas.width = innerWidth/2;
-canvas.height = innerHeight/2;
-});
+
 
 let img = new Image();
 let imgData, colors;
